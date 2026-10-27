@@ -73,6 +73,9 @@ converter_cards.forEach(card => {
     const fromUnit = selectFrom.value;
     const toUnit = selectTo.value;
 
+    console.log({ category, fromUnit, toUnit, rates: CONVERSION_RATES[category] });
+
+
     // Handle empty state
     if (isNaN(val)) {
       displayBox.textContent = "Enter a value.";

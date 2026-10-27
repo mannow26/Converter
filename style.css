@@ -160,13 +160,3 @@ form {
 .display span{
     color: #4095eb
 }
-button.convert {
-    background-color: #4095eb;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    width: 150px;
-    height: 36px;
-    display: block;
-    margin: 0 auto;
-}
