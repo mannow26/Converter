@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="Star.png" alt="">
+        <div>
+            <h1>Unit Converter</h1>
+            <h4>Convert different units easily!</h4>
+        </div>
+    </header>
+
+    <main>
+        <div class="units-cont">
+            <div class="unitcard selected" id="speed">
+                <img src="Speed.png" alt="Speed Icon">
+                <p>Speed</p>
+            </div>
+            <div class="unitcard" id="temperature">
+                <img src="Temperature.png" alt="Temperature Icon">
+                <p>Temperature</p>
+            </div>
+            <div class="unitcard" id="weight">
+                <img src="Weight.png" alt="Weight Icon">
+                <p>Weight</p>
+            </div>
+            <div class="unitcard" id="distance">
+                <img src="Distance.png" alt="Distance Icon">
+                <p>Distance</p>
+            </div>
+            <div class="unitcard" id="time">
+                <img src="Time.png" alt="Time Icon">
+                <p>Time</p>
+            </div>
+            <div class="unitcard" id="volume">
+                <img src="Volume.png" alt="Volume Icon">
+                <p>Volume</p>
+            </div>
+        </div>
+
+        <!-- Speed -->
+        <div class="converter" id="speed-conv">
+            <div class="cardheader">
+                <img src="Speed.png" alt="Speed Icon">
+                <h2>Speed</h2>
+            </div>
+
+            <form onsubmit="return false">
+                <div class="inputgroup">
+                    <label for="speed-from">From</label>
+                    <select id="speed-from" name="speed-from">
+                        <option value="kmph">Kilometers per hour (km/h)</option>
+                        <option value="mph">Miles per hour (mi/h)</option>
+                        <option value="mps">Meters per second (m/s)</option>
+                    </select>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="speed-value">Value</label>
+                    <input type="number" id="speed-value" name="value" placeholder="Enter a value here">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="speed-to">To</label>
+                    <select id="speed-to" name="speed-to">
+                        <option value="kmph">Kilometers per hour (km/h)</option>
+                        <option value="mph">Miles per hour (mi/h)</option>
+                        <option value="mps">Meters per second (m/s)</option>
+                    </select>
+                </div>
+            </form>
+            <div class="display">
+                <strong>
+                    Enter a value.
+                </strong>
+            </div>
+        </div>
+
+        <!-- Temperature -->
+        <div class="converter" id="temperature-conv">
+            <div class="cardheader">
+                <img src="Temperature.png" alt="Temperature Icon">
+                <h2>Temperature</h2>
+            </div>
+
+            <form onsubmit="return false">
+                <div class="inputgroup">
+                    <label for="temp-from">From</label>
+                    <select id="temp-from" name="temp-from">
+                        <option value="cel">Celsius (℃)</option>
+                        <option value="fah">Fahrenheit (℉)</option>
+                        <option value="kel">Kelvin (K)</option>
+                    </select>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="temp-value">Value</label>
+                    <input type="number" id="temp-value" name="value" placeholder="Enter a value here">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="temp-to">To</label>
+                    <select id="temp-to" name="temp-to">
+                        <option value="cel">Celsius (℃)</option>
+                        <option value="fah">Fahrenheit (℉)</option>
+                        <option value="kel">Kelvin (K)</option>
+                    </select>
+                </div>
+            </form>
+            <div class="display">
+                <strong>
+                    Enter a value.
+                </strong>
+            </div>
+        </div>
+
+        <!-- Weight -->
+        <div class="converter" id="weight-conv">
+            <div class="cardheader">
+                <img src="Weight.png" alt="Weight Icon">
+                <h2>Weight</h2>
+            </div>
+
+            <form onsubmit="return false">
+                <div class="inputgroup">
+                    <label for="weight-from">From</label>
+                    <select id="weight-from" name="weight-from">
+                        <option value="g">Gram (g)</option>
+                        <option value="oz">Ounce (oz)</option>
+                        <option value="lb">Pound (lb)</option>
+                        <option value="kg">Kilogram (kg)</option>
+                        <option value="t">Tonne (t)</option>
+                    </select>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="weight-value">Value</label>
+                    <input type="number" id="weight-value" name="value" placeholder="Enter a value here">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="weight-to">To</label>
+                    <select id="weight-to" name="weight-to">
+                        <option value="g">Gram (g)</option>
+                        <option value="oz">Ounce (oz)</option>
+                        <option value="lb">Pound (lb)</option>
+                        <option value="kg">Kilogram (kg)</option>
+                        <option value="t">Tonne (t)</option>
+                    </select>
+                </div>
+            </form>
+            <div class="display">
+                <strong>
+                    Enter a value.
+                </strong>
+            </div>
+        </div>
+
+        <!-- Distance -->
+        <div class="converter" id="distance-conv">
+            <div class="cardheader">
+                <img src="Distance.png" alt="Distance Icon">
+                <h2>Distance</h2>
+            </div>
+
+            <form onsubmit="return false">
+                <div class="inputgroup">
+                    <label for="distance-from">From</label>
+                    <select id="distance-from" name="distance-from">
+                        <option value="cm">Centimeter (cm)</option>
+                        <option value="in">Inch (in)</option>
+                        <option value="ft">Foot (ft)</option>
+                        <option value="m">Meter (m)</option>
+                        <option value="km">Kilometer (km)</option>
+                        <option value="mi">Mile (mi)</option>
+                    </select>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="distance-value">Value</label>
+                    <input type="number" id="distance-value" name="distance-value" placeholder="Enter a value here">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="distance-to">To</label>
+                    <select id="distance-to" name="distance-to">
+                        <option value="cm">Centimeter (cm)</option>
+                        <option value="in">Inch (in)</option>
+                        <option value="ft">Foot (ft)</option>
+                        <option value="m">Meter (m)</option>
+                        <option value="km">Kilometer (km)</option>
+                        <option value="mi">Mile (mi)</option>
+                    </select>
+                </div>
+            </form>
+            <div class="display">
+                <strong>
+                    Enter a value.
+                </strong>
+            </div>
+        </div>
+
+        <!-- Time -->
+        <div class="converter" id="time-conv">
+            <div class="cardheader">
+                <img src="Time.png" alt="Time Icon">
+                <h2>Time</h2>
+            </div>
+
+            <form onsubmit="return false">
+                <div class="inputgroup">
+                    <label for="time-from">From</label>
+                    <select id="time-from" name="time-from">
+                        <option value="s">Second (s)</option>
+                        <option value="min">Minute (min)</option>
+                        <option value="hr">Hour (hr)</option>
+                        <option value="d">Day (d)</option>
+                        <option value="wk">Week (wk)</option>
+                        <option value="mo">Month (mo)</option>
+                        <option value="yr">Calendar year (yr)</option>
+                    </select>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="time-value">Value</label>
+                    <input type="number" id="time-value" name="value" placeholder="Enter a value here">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="time-to">To</label>
+                    <select id="time-to" name="time-to">
+                        <option value="s">Second (s)</option>
+                        <option value="min">Minute (min)</option>
+                        <option value="hr">Hour (hr)</option>
+                        <option value="d">Day (d)</option>
+                        <option value="wk">Week (wk)</option>
+                        <option value="mo">Month (mo)</option>
+                        <option value="yr">Calendar year (yr)</option>
+                    </select>
+                </div>
+            </form>
+            <div class="display">
+                <strong>
+                    Enter a value.
+                </strong>
+            </div>
+        </div>
+
+        <!-- Volume -->
+        <div class="converter" id="volume-conv">
+            <div class="cardheader">
+                <img src="Volume.png" alt="Volume Icon">
+                <h2>Volume</h2>
+            </div>
+
+            <form onsubmit="return false">
+                <div class="inputgroup">
+                    <label for="volume-from">From</label>
+                    <select id="volume-from" name="volume-from">
+                        <option value="ml">Milliliter (mL)</option>
+                        <option value="l">Liter (L)</option>
+                        <option value="m3">Cubic meter (m³)</option>
+                        <option value="kl">Kiloliter (kL)</option>
+                    </select>
+                </div>
+
+                <div class="inputgroup">
+                    <label for="volume-value">Value</label>
+                    <input type="number" id="volume-value" name="value" placeholder="Enter a value here">
+                </div>
+
+                <div class="inputgroup">
+                    <label for="volume-to">To</label>
+                    <select id="volume-to" name="volume-to">
+                        <option value="ml">Milliliter (mL)</option>
+                        <option value="lb">Liter (L)</option>
+                        <option value="m3">Cubic meter (m³)</option>
+                        <option value="kl">Kiloliter (kL)</option>
+                    </select>
+                </div>
+            </form>
+            <div class="display">
+                <strong>
+                    Enter a value.
+                </strong>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS File -->
+    <script src="conversion.js"></script>
+</body>
+
+</html>
