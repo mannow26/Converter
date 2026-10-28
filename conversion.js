@@ -1,5 +1,5 @@
 const CONVERSION_RATES = {
-  speed: { mps: 1, kmph: 0.277778, mph: 0.44704 },
+  speed: { kmph: 1, mph: 1.6093, mps: 3.6},
   weight: { g: 1, lb: 453.592, kg: 1000, oz: 28.3495, t: 1000000 },
   distance: { cm: 1, in: 2.54, ft: 30.48, m: 100, km: 1000000, mi: 160934.4 },
   time: { s: 1, min: 60, hr: 3600, d: 86400, wk: 604800, mo: 2592000, yr: 31536000 },
