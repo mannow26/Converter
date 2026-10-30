@@ -44,8 +44,8 @@ main {
     gap: 24px;
 }
 .units-cont {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: repeat(200px, 1fr) ;
     gap: 12px;
 }
 .unitcard {
