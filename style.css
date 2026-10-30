@@ -38,14 +38,13 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 32px;
-    max-width: 720px;
     width: 100%;
     /* background-color: blue; */
     gap: 24px;
 }
 .units-cont {
     display: grid;
-    grid-template: repeat(200px, 1fr) ;
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
 }
 .unitcard {
@@ -53,7 +52,7 @@ main {
     align-items: center;
     border: 4px solid transparent;
     border-radius: 12px;
-    width: calc(33.333% - 8px);
+    /* width: calc(33.333% - 8px); */
 }
 #speed {
     background-color: #bfe2ff;
@@ -171,21 +170,8 @@ form {
     display: block;
     margin: 0 auto;
 }
-@media screen and (min-width: 200px) and (max-width: 517px){
-    .unitcard{width: calc(40% - 8px); align-items: center;}
-    .unitcard>p {display: none; overflow-x: auto;}
-    .unitcard>img {width: 50px; display: block; margin: 0 auto;}
-    #temperature img {width: 36px; display: block; margin: 0 auto;}
-}
-@media screen and (max-width: 425px) {
-    .unitcard{width: calc(50% - 8px); align-items: center;}
-    .unitcard>p {font-size: 12px; overflow-x: auto;}
-    .unitcard>img {width: 25px;}
-    #temperature img {width: 18px;}
-}
-@media screen and (min-width: 425px) and (max-width: 768px) {
-    .unitcard{width: calc(40% - 8px); align-items: center;}
-    .unitcard>p {font-size: 14px; overflow-x: auto;}
-    .unitcard>img {width: 25px;}
-    #temperature img {width: 18px;}
-}
+
+@media (min-width:768px ) {
+    .units-cont {
+       grid-template-columns: repeat(3, 1fr);
+}}
