@@ -55,9 +55,6 @@ main {
     border-radius: 12px;
     width: calc(33.333% - 8px);
 }
-.unitcard p {
-    max-width: calc(33.333% - 8px)
-}
 #speed {
     background-color: #bfe2ff;
     padding: 12px;
@@ -162,4 +159,33 @@ form {
 }
 .display span{
     color: #4095eb
+}
+
+#reset {
+    background-color: #4095eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width: 200px) and (max-width: 517px){
+    .unitcard{width: calc(40% - 8px); align-items: center;}
+    .unitcard>p {display: none; overflow-x: auto;}
+    .unitcard>img {width: 50px; display: block; margin: 0 auto;}
+    #temperature img {width: 36px; display: block; margin: 0 auto;}
+}
+@media screen and (max-width: 425px) {
+    .unitcard{width: calc(50% - 8px); align-items: center;}
+    .unitcard>p {font-size: 12px; overflow-x: auto;}
+    .unitcard>img {width: 25px;}
+    #temperature img {width: 18px;}
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .unitcard{width: calc(40% - 8px); align-items: center;}
+    .unitcard>p {font-size: 14px; overflow-x: auto;}
+    .unitcard>img {width: 25px;}
+    #temperature img {width: 18px;}
 }
