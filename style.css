@@ -191,6 +191,9 @@ span {
         grid-template-columns: repeat(6, 1fr);
         overflow: auto;
     }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
     .converter {
         width: 100%;
     }
